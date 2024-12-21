@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var nos = [12, 14, 15, 9, 3, 19, 22, 5, 17,25];
+
+        function findSecondLargest() {
+            var largest = -Infinity;
+            var secondLargest = -Infinity;
+            for (i = 0; i < nos.length; i++) {
+                if (nos[i] > largest) {
+                    secondLargest = largest;
+                    largest = nos[i]
+                }else if(nos[i] > secondLargest && nos[i] !== largest){
+                    secondLargest = nos[i]
+                }
+            }
+            return secondLargest 
+        }
+        const result = findSecondLargest();
+        console.log(result)
+    </script>
+</body>
+
+</html>

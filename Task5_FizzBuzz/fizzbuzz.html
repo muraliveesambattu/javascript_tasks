@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function writeFizzBuzz(){
+            var num = prompt("Enter any Number Between 1 to 50")
+            for(i=1;i<num;i++){
+                if(i % 3 === 0){
+                    document.write("Fizz <br/>")
+                }
+                if(i % 5 === 0){
+                    document.write("Buzz <br/>")
+                }
+                if(i % 3 === 0 && i % 5 === 0){
+                    document.write("FizzBuzz <br/>")
+                }else {
+                    document.write(i+"<br/>")
+                }
+                
+            }
+        }
+
+        writeFizzBuzz()
+    </script>
+</body>
+</html>
